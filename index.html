@@ -5,12 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Assignment</title>
 </head>
 
 <body>
-    <h1>this is taassdlf;kls</h1>
+    <!-- navbar -->
+    <div
+        class="flex flex-col lg:flex-row items-center justify-around h-[110px] lg:h-[120px] border-2 text-[#3F3F3F] font-bold text-center">
+        <h1 class="text-[28px] text-[#396C03]">FoodTime</h1>
+        <ul class="flex flex-row items-center space-x-[10px] lg:space-x-[70px] text-xs lg:text-lg">
+            <li>Home</li>
+            <li>Blog</li>
+            <li>About Us</li>
+            <select>
+                <option value="volvo">EN</option>
+            </select>
+            <div class="flex items-center space-x-2 lg:space-x-7 relative">
+                <button class="btn hidden lg:block">
+                    Login
+                </button>
+                <button class="btn-sm-m block lg:hidden">
+                    Login
+                </button>
+                <button class="btn-sm rounded-full hidden lg:block">
+                    <img src="./assets/img/Vector.png" alt="">
+                </button>
+                <button class="btn-xs-m rounded-full block lg:hidden">
+                    <img src="./assets/img/Vector.png" alt="">
+                </button>
+                <img src="./assets/img/2.png" alt="" srcset=""
+                    class="w-5 h-5 absolute right-0 top-0 background hidden lg:block">
+                <img src="./assets/img/2.png" alt="" srcset=""
+                    class="w-5 h-5 absolute right-0 top-0 background block lg:hidden">
+            </div>
+        </ul>
+    </div>
+
+    <!-- banner section -->
+    <div class="mx-w-screen flex justify-between">
+        <img src="/assets//img/—Pngtree—hand-painted noise green leaf element_4054582 1.png" alt="" srcset="" class="">
+        <div class="flex">
+            <img src="/assets/img/—Pngtree—hand-painted noise green leaf element_4054582 1 (1).png" alt="" srcset="">
+            <div class="text-bold liniar w-[245px] h-[118px] z-10">
+                <div class="flex items-center space-x-2 text-[#FF8B00]">
+                    <img src="/assets/img/right.png" alt="" srcset="" class="w-10 h-10">
+                    <h1 class="text-4xl">200k+</h1>
+                </div>
+                <p class="text-[#838383]">People Delivered</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 flex flex-col lg:flex-row items-center p-5 lg:px-20 lg:pb-20">
+        <div class="w-full lg:w-[50%]">
+            <h1 class="text-xl lg:text-5xl font-bold text-[#396C03]">Order food online from your favourite local
+                restaurants.
+            </h1>
+            <p class="text-xl lg:text-2xl">Freshly made food delivered to your door.</p>
+
+            <div class="flex mt-8 items-center relative">
+                <img src="/assets/img/Ellipse 1.png" alt="" srcset="" class="absolute left-3 w-[40px] h-[40px] top-1">
+                <input type="search" class="w-11/12 h-[50.19px] rounded-full px-20 py-2"
+                    placeholder="Enter your location">
+                <button
+                    class="w-[150.56px]  h-[30.19px] lg:w-[180.56px] h-[50.19px] bg-[#396C03] text-white rounded-full relative right-20 lg:right-32">Search</button>
+            </div>
+        </div>
+        <div class="w-full lg:w-[50%]">
+            <img src="assets/img/image 1.png" alt="" class="w-full">
+        </div>
+    </div>
 </body>
 
 </html>
