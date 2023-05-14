@@ -39,6 +39,10 @@
     padding: 6px;
     border-radius: 50%;
 }
+.backgrondImage{
+    background-image: url('/assets/img/Rectangle 5.png');
+    background-repeat: no-repeat;
+}
 
 .liniar{
     background-color: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
