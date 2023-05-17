@@ -1,3 +1,6 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
 .btn {
     width: 154px;
     height: 58px;
@@ -6,6 +9,27 @@
     color: #FFFFFF;
     font-weight: bold;
     background: #396C03;
+}
+.circle-ellips{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+.btn-search{
+    background: #396C03;
+    color: #FFFFFF;
+    padding: 15px 50px;
+    border-radius: 100px;
+}
+
+.btn-explore{
+    background: #396C03;
+    color: #FFFFFF;
+    border-radius: 224.4px;
+    padding: 15px 60px; 
+    font-weight: 700;
 }
 .btn-sm-m {
     width: 90px;
@@ -42,6 +66,65 @@
 .backgrondImage{
     background-image: url('/assets/img/Rectangle 5.png');
     background-repeat: no-repeat;
+}
+
+
+.bg-cycle{
+    background-image: url('/assets/img/bg-cycle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+}
+.banner-imag1{
+    animation: example 5s linear infinite;
+}
+.banner-imag2{
+    animation: example2 5s linear infinite;
+}
+
+@keyframes example {
+    100%{
+        transform: translateY(1000px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+}
+@keyframes example2 {
+    100%{
+        transform: translateY(1000px);
+    }
+}
+
+@media (max-width:450px){
+    .btn-search{
+        background: #396C03;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 100px;
+    }
+    .circle-ellips{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 8px;
+        top: 10px;
+    }
+    
+}
+
+@media (min-width: 760px) {
+    @keyframes example {
+        100%{
+            transform: translateX(1000px);
+        }
+    }
+    @keyframes example2 {
+        100%{
+            transform: translateX(-1000px);
+        }
+    }
 }
 
 .liniar{
